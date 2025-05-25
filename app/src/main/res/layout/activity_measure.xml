@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".measure">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/bgfinal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/yay" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/finalframe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/textcongrats"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:lottie_autoPlay="true"
+
+            app:lottie_rawRes="@raw/congrats" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp"
+            android:text="100"
+            android:textColor="#d68ced"
+            android:gravity="center"
+            android:textSize="80sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textcongrats" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="349dp"
+            android:layout_height="320dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/frame"
+            app:layout_constraintEnd_toEndOf="@+id/frame"
+            app:layout_constraintStart_toStartOf="@+id/frame"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="49dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+
+                    android:background="@drawable/circular"
+                    android:indeterminate="false"
+                    android:progress="55"
+                    android:progressDrawable="@drawable/circularpb"
+                    tools:layout_editor_absoluteX="75dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/chakrapetchbold"
+                        android:text="LOGIC"
+                        android:textColor="#d99607"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="46dp"
+                        tools:layout_editor_absoluteY="101dp" />
+
+                    <TextView
+                        android:id="@+id/desc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/chakrapetchbold"
+                        android:text="Logic is like a puzzle where you figure \nout what steps to take to solve it."
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp"
+                        tools:layout_editor_absoluteX="46dp"
+                        tools:layout_editor_absoluteY="101dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="49dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/circular"
+                    android:indeterminate="false"
+                    android:progress="40"
+                    android:progressDrawable="@drawable/circularpb"
+                    tools:layout_editor_absoluteX="75dp"
+                    tools:layout_editor_absoluteY="151dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/chakrapetchbold"
+                        android:text="ANALYTIC SKILLS"
+                        android:textColor="#d99607"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="238dp"
+                        tools:layout_editor_absoluteY="33dp" />
+
+                    <TextView
+                        android:id="@+id/desc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/chakrapetchbold"
+                        android:text="Analytic skills are like being a detective, \nwhere you use clues and information to \nunderstand and solve problems."
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp"
+                        tools:layout_editor_absoluteX="238dp"
+                        tools:layout_editor_absoluteY="33dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBar3"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="49dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/circular"
+                    android:indeterminate="false"
+                    android:progress="40"
+                    android:progressDrawable="@drawable/circularpb"
+                    tools:layout_editor_absoluteX="15dp"
+                    tools:layout_editor_absoluteY="32dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/chakrapetchbold"
+                        android:text="ADAPTIVE SKILLS"
+                        android:textColor="#d99607"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="176dp"
+                        tools:layout_editor_absoluteY="145dp" />
+
+                    <TextView
+                        android:id="@+id/desc3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/chakrapetchbold"
+                        android:text="Adaptive skills are like having different tools \nin your toolbox to handle different situations, \nlike using a hammer for nails and a screwdriver \nfor screws."
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp"
+                        tools:layout_editor_absoluteX="176dp"
+                        tools:layout_editor_absoluteY="145dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBar4"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="49dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/circular"
+                    android:indeterminate="false"
+                    android:progress="40"
+                    android:progressDrawable="@drawable/circularpb"
+                    tools:layout_editor_absoluteX="15dp"
+                    tools:layout_editor_absoluteY="32dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/chakrapetchbold"
+                        android:text="TIME MANAGEMENT"
+                        android:textColor="#d99607"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="143dp"
+                        tools:layout_editor_absoluteY="118dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/chakrapetchbold"
+                        android:text="Time management is like organizing your day \nas if it's a treasure hunt, where you plan ahead \nto find and make the most of valuable moments."
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp"
+                        tools:layout_editor_absoluteX="143dp"
+                        tools:layout_editor_absoluteY="118dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/background_btn_choose"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:text="F i n i s h"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

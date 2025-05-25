@@ -1,0 +1,10 @@
+How many legs does a spider have?/5/6/7/8/8/8/2/1/2
+How many legs does a dog have?/2/4/6/8/4/4/2/2/2
+What shape is a basketball?/Square/Circle/Triangle/Rectangle/Circle/3/3/2/2
+What is the first letter of the English alphabet?/B/C/A/D/A/4/2/2/2
+Which animal is known as the 'King of the Jungle'?/Lion/Elephant/Tiger/Giraffe/Lion/3/3/2/2
+What do plants need to grow?/Chocolate/Sunlight/Toys/Books/Sunlight/4/2/2/2
+What color is a banana when it is ripe?/Green/Blue/Yellow/Red/Yellow/1/1/1/1
+How many continents are there in the world?/3/6/7/5/7/2/1/3/2
+Which animal says "meow"?/Dog/Cat/Cow/Bird/Cat/1/1/1/1
+What is the name of the planet we live on?/Mars/Earth/Jupiter/Saturn/Earth/1/1/1/1

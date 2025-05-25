@@ -1,0 +1,3 @@
+Derivatives of x?, 1/x, 1, x raised to 1/2, e,1
+23/21?,12,1,22,i dont know,i dont know
+Integral of x? 1/x raised to 1/2, 2, x, 1,1/x raised to 1/2
